@@ -24,3 +24,36 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* My code starts here */
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.first-item, .second-item, .third-item, .fourth-item {
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+/*
+I did not need to make a title container. I merely had to apply the margin-bottom rule to the title class.
+
+I'm too focused on using flex box, and I end up foregoing simpler approaches in order to make use of it.
+i.e. I could have centered the whole page with "body: {text-align: center;}"
+
+I'm still not entirely sure when to use flex-basis, width, and max-width.
+*/

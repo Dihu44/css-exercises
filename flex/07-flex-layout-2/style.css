@@ -26,3 +26,68 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* My code starts here */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  /* I'm omitting any padding so that my work can resemble the larger desired outcome
+  padding: 16px; */
+  /* Could have just used width rather than max-width */
+  max-width: 300px;
+  /* This would make my work more closely resemble the desired outcome, but it's not necessary
+  margin: 16px; */
+}
+
+/* Again, this would have made my work more closely resemble the desired outcome
+li {
+  margin-bottom: 16px;
+}
+*/
